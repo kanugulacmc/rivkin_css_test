@@ -45,7 +45,7 @@ figure {
   margin: 0;
 }
 html {
-  font-size: 62.5%;
+  font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-size-adjust: 100%;
@@ -552,18 +552,13 @@ select:not([disabled]):focus {
   font-weight: 600;
 }
 
-.payment-input {
-  border: 1px solid #ced1d6;
-  height: 3rem;
-}
-
 .payment_form-mh {
   column-gap: 2rem;
 }
 
 #expiry-date,
 #security-code {
-  width: fit-content;
+  width: fit-content !important;
 }
 
 ::placeholder {
@@ -572,4 +567,12 @@ select:not([disabled]):focus {
 
 .alert {
   display: none !important;
+}
+
+body.v2 input.payment-input,
+body.payment input.payment-input {
+  border-radius: 4px;
+  height: 3rem;
+  width: 100%;
+  border: 1px solid #ced1d6;
 }
