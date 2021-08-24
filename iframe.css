@@ -52,7 +52,7 @@ html {
 }
 body {
   color: #333333;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.42857143;
@@ -96,10 +96,10 @@ sup {
   vertical-align: baseline;
 }
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 dfn {
   font-style: italic;
@@ -159,7 +159,7 @@ h4 .small,
 h5 .small,
 h6 .small {
   color: #333333;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1;
@@ -218,7 +218,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 code {
   background: #f6f6f6;
@@ -257,7 +257,7 @@ blockquote {
   margin: 0 0 20px 40px;
   padding: 0;
   color: #333333;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-weight: 400;
   line-height: 1.42857143;
@@ -279,21 +279,21 @@ blockquote .small {
 blockquote footer:before,
 blockquote small:before,
 blockquote .small:before {
-  content: '\2014 \00A0';
+  content: "\2014 \00A0";
 }
 blockquote cite {
   font-style: normal;
 }
 blockquote:before,
 blockquote:after {
-  content: '';
+  content: "";
 }
 q {
   quotes: none;
 }
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 cite {
@@ -333,7 +333,7 @@ button {
   color: #333333;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
   margin: 0;
   padding: 7px 15px;
@@ -376,7 +376,7 @@ input[type="email"] {
   background-clip: padding-box;
   border: 1px solid #c2c2c2;
   border-radius: 1px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   height: 32px;
   line-height: 1.42857143;
@@ -447,7 +447,7 @@ select {
   background-clip: padding-box;
   border: 1px solid #c2c2c2;
   border-radius: 1px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   height: 32px;
   line-height: 1.42857143;
@@ -468,7 +468,7 @@ textarea {
   background-clip: padding-box;
   border: 1px solid #c2c2c2;
   border-radius: 1px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   height: auto;
   line-height: 1.42857143;
@@ -539,12 +539,35 @@ select:not([disabled]):focus {
   box-shadow: 0 0 3px 1px #68a8e0;
 }
 
-#payment-form label {
-    font-weight: 600;
+.row-fluid .offset4:first-child {
+  margin: auto;
+  width: 100%;
 }
 
-#payment-form #security-code {
-  float: left;
+#payment-form {
+  width: inherit;
+}
+
+#payment-form label {
+  font-weight: 600;
+}
+
+.payment-input {
+  border: 1px solid #ced1d6;
+  height: 3rem;
+}
+
+.payment_form-mh {
+  column-gap: 2rem;
+}
+
+#expiry-date,
+#security-code {
+  width: fit-content;
+}
+
+::placeholder {
+  text-align: center;
 }
 
 .alert {
