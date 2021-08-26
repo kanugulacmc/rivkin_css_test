@@ -1,0 +1,48 @@
+.row-fluid .offset4:first-child {
+  margin: auto;
+  width: 100%;
+}
+
+#payment-form {
+  width: inherit;
+}
+
+#payment-form label {
+  font-weight: 600;
+}
+
+.payment_form-mh {
+  column-gap: 2rem;
+}
+
+#expiry-date,
+#security-code {
+  width: fit-content !important;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.alert {
+  display: none !important;
+}
+
+body.v2 input.payment-input,
+body.payment input.payment-input {
+  border-radius: 4px;
+  height: 3rem;
+  width: 100%;
+  border: 1px solid #ced1d6;
+}
+
+.error {
+  color: #EE2F53;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+#payment_request_card_number, 
+#payment_request_security_code {
+  letter-spacing: 3px;
+}
