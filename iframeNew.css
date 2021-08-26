@@ -576,3 +576,7 @@ body.payment input.payment-input {
   width: 100%;
   border: 1px solid #ced1d6;
 }
+
+.error {
+  color: #EE2F53;
+}
