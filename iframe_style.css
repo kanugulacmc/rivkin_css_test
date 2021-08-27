@@ -17,7 +17,7 @@
 
 #expiry-date,
 #security-code {
-  width: fit-content !important;
+  width: auto !important;
 }
 
 ::placeholder {
@@ -45,4 +45,17 @@ body.payment input.payment-input {
 #payment_request_card_number, 
 #payment_request_security_code {
   letter-spacing: 3px;
+}
+
+#pay-now {
+	background: #091731;
+  border-radius: 2rem;
+  width: 14rem;
+  height: 3rem;
+  float: left;
+  font-size: 16px;
+}
+
+#pay-now > i {
+    display: none;
 }
